@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+/*Scroll Bar*/
+::-webkit-scrollbar {
+    width: 7.5px;
+}
+::-webkit-scrollbar-track {
+    background: black;
+}
+::-webkit-scrollbar-thumb {
+    background: #22c55e;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #4ade80;
+}
+@tailwind base;
+@layer base {
+    :root {
+      --text: #080808;
+      --background: #fbfbfe;
+      --primary: #22c55e;
+      --secondary: #5f57ff;
+      --accent: #06f5f9;
+    }
+    .dark {
+      --text: #f7f7f7;
+      --background: #010104;
+      --primary: #22c55e;
+      --secondary: #111827;
+      --accent: #06f5f9;
+    }
+    .cairo {
+        font-family: "Cairo", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-variation-settings: "slnt" 0;
+      }
+    .roboto-mono {
+        font-family: "Roboto Mono", monospace;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+    }
+}
